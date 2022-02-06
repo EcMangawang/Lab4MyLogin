@@ -26,7 +26,9 @@ public class LoginServlet extends HttpServlet {
         
        String query = request.getQueryString();
        
-       if(query != null && query.contains("logout");
+       if(query != null && query.contains("logout")) {
+           
+       }
         
         getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
     }
@@ -42,6 +44,10 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        
         getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
     }
 }
