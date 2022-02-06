@@ -8,14 +8,14 @@
     <body>
         <h1>Login</h1>
         
-        <form>
+        <form action="login" method="post">
             <p>
                 <label for="username">Username: </label><!-- comment -->
                 <input type="text" name="username" id="username">
             </p>
             <p>
                 <label for="password">Password</label>
-                <input type="text" name="password" id="password">
+                <input type="password" name="password" id="password">
             </p>
             
             <button type="submit">Submit</button>
